@@ -1,0 +1,477 @@
+?SNDlib native format; type: network; version: 1.0
+# network demandMatrix-15min-20050730-2045-geant
+
+# META SECTION
+#
+# <attribute> <content>
+
+META (
+  granularity  = 15min
+  time  = 20050730-2045
+  unit  = MBITPERSEC
+  origin  = Steve Uhlig, http://totem.info.ucl.ac.be/dataset.html
+)
+
+# NODE SECTION
+#
+# <node_id> [(<longitude>, <latitude>)]
+
+NODES (
+  at1.at ( 16.3729 48.2091 )
+  be1.be ( 4.3518 50.8469 )
+  ch1.ch ( 6.1399 46.2038 )
+  cz1.cz ( 14.4423 50.0785 )
+  de1.de ( 8.6842 50.1122 )
+  es1.es ( -3.7033 40.4167 )
+  fr1.fr ( 2.351 48.8566 )
+  gr1.gr ( 23.5808 37.9778 )
+  hr1.hr ( 15.9644 45.8071 )
+  hu1.hu ( 19.0936 47.4976 )
+  ie1.ie ( -6.2573 53.3416 )
+  il1.il ( 34.8097 32.0714 )
+  it1.it ( 9.19 45.4642 )
+  lu1.lu ( 6.1296 49.6112 )
+  nl1.nl ( 4.9407 52.3236 )
+  ny1.ny ( -73.94384 40.6698 )
+  pl1.pl ( 16.8874 52.3963 )
+  pt1.pt ( -9.1363 38.7073 )
+  se1.se ( 17.8742 59.3617 )
+  si1.si ( 14.5148 46.0574 )
+  sk1.sk ( 17.1297 48.1531 )
+  uk1.uk ( -0.1264 51.5086 )
+)
+
+# LINK SECTION
+#
+# <link_id> ( <source> <target> ) <pre_installed_capacity> <pre_installed_capacity_cost> <routing_cost> <setup_cost> ( {<module_capacity> <module_cost>}* )
+
+LINKS (
+)
+
+# DEMAND SECTION
+#
+# <demand_id> ( <source> <target> ) <routing_unit> <demand_value> <max_path_length>
+
+DEMANDS (
+  at1.at_be1.be ( at1.at be1.be ) 1 14.961678 UNLIMITED
+  at1.at_ch1.ch ( at1.at ch1.ch ) 1 61.494458 UNLIMITED
+  at1.at_de1.de ( at1.at de1.de ) 1 8.240692 UNLIMITED
+  at1.at_fr1.fr ( at1.at fr1.fr ) 1 0.516484 UNLIMITED
+  at1.at_gr1.gr ( at1.at gr1.gr ) 1 125.05581 UNLIMITED
+  at1.at_hr1.hr ( at1.at hr1.hr ) 1 400.353863 UNLIMITED
+  at1.at_hu1.hu ( at1.at hu1.hu ) 1 956.45265 UNLIMITED
+  at1.at_ie1.ie ( at1.at ie1.ie ) 1 0.005398 UNLIMITED
+  at1.at_il1.il ( at1.at il1.il ) 1 255.361539 UNLIMITED
+  at1.at_it1.it ( at1.at it1.it ) 1 37.881037 UNLIMITED
+  at1.at_lu1.lu ( at1.at lu1.lu ) 1 0.009559 UNLIMITED
+  at1.at_nl1.nl ( at1.at nl1.nl ) 1 11.884928 UNLIMITED
+  at1.at_ny1.ny ( at1.at ny1.ny ) 1 3.38844 UNLIMITED
+  at1.at_pt1.pt ( at1.at pt1.pt ) 1 0.028341 UNLIMITED
+  at1.at_se1.se ( at1.at se1.se ) 1 935.937685 UNLIMITED
+  at1.at_si1.si ( at1.at si1.si ) 1 1367.85787 UNLIMITED
+  at1.at_uk1.uk ( at1.at uk1.uk ) 1 2.699663 UNLIMITED
+  be1.be_at1.at ( be1.be at1.at ) 1 3.486451 UNLIMITED
+  be1.be_ch1.ch ( be1.be ch1.ch ) 1 0.432981 UNLIMITED
+  be1.be_de1.de ( be1.be de1.de ) 1 5.661477 UNLIMITED
+  be1.be_es1.es ( be1.be es1.es ) 1 0.15756 UNLIMITED
+  be1.be_fr1.fr ( be1.be fr1.fr ) 1 16.284519 UNLIMITED
+  be1.be_hr1.hr ( be1.be hr1.hr ) 1 0.004499 UNLIMITED
+  be1.be_hu1.hu ( be1.be hu1.hu ) 1 0.107289 UNLIMITED
+  be1.be_ie1.ie ( be1.be ie1.ie ) 1 0.01552 UNLIMITED
+  be1.be_il1.il ( be1.be il1.il ) 1 0.012427 UNLIMITED
+  be1.be_it1.it ( be1.be it1.it ) 1 0.014958 UNLIMITED
+  be1.be_lu1.lu ( be1.be lu1.lu ) 1 0.012821 UNLIMITED
+  be1.be_nl1.nl ( be1.be nl1.nl ) 1 126.085798 UNLIMITED
+  be1.be_ny1.ny ( be1.be ny1.ny ) 1 0.363479 UNLIMITED
+  be1.be_pl1.pl ( be1.be pl1.pl ) 1 0.143783 UNLIMITED
+  be1.be_se1.se ( be1.be se1.se ) 1 179.871849 UNLIMITED
+  be1.be_si1.si ( be1.be si1.si ) 1 0.013102 UNLIMITED
+  be1.be_sk1.sk ( be1.be sk1.sk ) 1 0.003374 UNLIMITED
+  be1.be_uk1.uk ( be1.be uk1.uk ) 1 3.14957 UNLIMITED
+  ch1.ch_at1.at ( ch1.ch at1.at ) 1 4902.114183 UNLIMITED
+  ch1.ch_be1.be ( ch1.ch be1.be ) 1 4.72517 UNLIMITED
+  ch1.ch_cz1.cz ( ch1.ch cz1.cz ) 1 0.148957 UNLIMITED
+  ch1.ch_de1.de ( ch1.ch de1.de ) 1 285.49402 UNLIMITED
+  ch1.ch_es1.es ( ch1.ch es1.es ) 1 1221.169498 UNLIMITED
+  ch1.ch_fr1.fr ( ch1.ch fr1.fr ) 1 34.725451 UNLIMITED
+  ch1.ch_gr1.gr ( ch1.ch gr1.gr ) 1 0.284418 UNLIMITED
+  ch1.ch_hr1.hr ( ch1.ch hr1.hr ) 1 1.364339 UNLIMITED
+  ch1.ch_hu1.hu ( ch1.ch hu1.hu ) 1 2.33849 UNLIMITED
+  ch1.ch_ie1.ie ( ch1.ch ie1.ie ) 1 0.38614 UNLIMITED
+  ch1.ch_il1.il ( ch1.ch il1.il ) 1 0.341436 UNLIMITED
+  ch1.ch_it1.it ( ch1.ch it1.it ) 1 0.156492 UNLIMITED
+  ch1.ch_lu1.lu ( ch1.ch lu1.lu ) 1 0.002137 UNLIMITED
+  ch1.ch_nl1.nl ( ch1.ch nl1.nl ) 1 6.146359 UNLIMITED
+  ch1.ch_ny1.ny ( ch1.ch ny1.ny ) 1 1.093867 UNLIMITED
+  ch1.ch_pl1.pl ( ch1.ch pl1.pl ) 1 0.002924 UNLIMITED
+  ch1.ch_pt1.pt ( ch1.ch pt1.pt ) 1 73.484539 UNLIMITED
+  ch1.ch_se1.se ( ch1.ch se1.se ) 1 2040.077149 UNLIMITED
+  ch1.ch_si1.si ( ch1.ch si1.si ) 1 3.557415 UNLIMITED
+  ch1.ch_sk1.sk ( ch1.ch sk1.sk ) 1 0.585649 UNLIMITED
+  ch1.ch_uk1.uk ( ch1.ch uk1.uk ) 1 14.522793 UNLIMITED
+  cz1.cz_at1.at ( cz1.cz at1.at ) 1 6.883888 UNLIMITED
+  cz1.cz_be1.be ( cz1.cz be1.be ) 1 0.184551 UNLIMITED
+  cz1.cz_ch1.ch ( cz1.cz ch1.ch ) 1 0.259057 UNLIMITED
+  cz1.cz_de1.de ( cz1.cz de1.de ) 1 2.996283 UNLIMITED
+  cz1.cz_es1.es ( cz1.cz es1.es ) 1 0.029634 UNLIMITED
+  cz1.cz_fr1.fr ( cz1.cz fr1.fr ) 1 0.704465 UNLIMITED
+  cz1.cz_hr1.hr ( cz1.cz hr1.hr ) 1 0.002249 UNLIMITED
+  cz1.cz_hu1.hu ( cz1.cz hu1.hu ) 1 2.493294 UNLIMITED
+  cz1.cz_il1.il ( cz1.cz il1.il ) 1 0.084347 UNLIMITED
+  cz1.cz_nl1.nl ( cz1.cz nl1.nl ) 1 4.27352 UNLIMITED
+  cz1.cz_ny1.ny ( cz1.cz ny1.ny ) 1 1.46966 UNLIMITED
+  cz1.cz_pt1.pt ( cz1.cz pt1.pt ) 1 0.004499 UNLIMITED
+  cz1.cz_se1.se ( cz1.cz se1.se ) 1 0.149069 UNLIMITED
+  cz1.cz_si1.si ( cz1.cz si1.si ) 1 0.636369 UNLIMITED
+  cz1.cz_uk1.uk ( cz1.cz uk1.uk ) 1 0.550392 UNLIMITED
+  de1.de_at1.at ( de1.de at1.at ) 1 498.281066 UNLIMITED
+  de1.de_be1.be ( de1.de be1.be ) 1 4.256988 UNLIMITED
+  de1.de_ch1.ch ( de1.de ch1.ch ) 1 39.643325 UNLIMITED
+  de1.de_cz1.cz ( de1.de cz1.cz ) 1 2.785303 UNLIMITED
+  de1.de_es1.es ( de1.de es1.es ) 1 56.855041 UNLIMITED
+  de1.de_fr1.fr ( de1.de fr1.fr ) 1 107.037174 UNLIMITED
+  de1.de_gr1.gr ( de1.de gr1.gr ) 1 75.005707 UNLIMITED
+  de1.de_hr1.hr ( de1.de hr1.hr ) 1 1.230678 UNLIMITED
+  de1.de_hu1.hu ( de1.de hu1.hu ) 1 23.185951 UNLIMITED
+  de1.de_ie1.ie ( de1.de ie1.ie ) 1 4.798158 UNLIMITED
+  de1.de_il1.il ( de1.de il1.il ) 1 109.262358 UNLIMITED
+  de1.de_it1.it ( de1.de it1.it ) 1 21.020316 UNLIMITED
+  de1.de_lu1.lu ( de1.de lu1.lu ) 1 6.70929 UNLIMITED
+  de1.de_nl1.nl ( de1.de nl1.nl ) 1 50.518284 UNLIMITED
+  de1.de_ny1.ny ( de1.de ny1.ny ) 1 14.063553 UNLIMITED
+  de1.de_pl1.pl ( de1.de pl1.pl ) 1 0.391707 UNLIMITED
+  de1.de_pt1.pt ( de1.de pt1.pt ) 1 27.067483 UNLIMITED
+  de1.de_se1.se ( de1.de se1.se ) 1 539.137694 UNLIMITED
+  de1.de_si1.si ( de1.de si1.si ) 1 710.188768 UNLIMITED
+  de1.de_sk1.sk ( de1.de sk1.sk ) 1 9.803809 UNLIMITED
+  de1.de_uk1.uk ( de1.de uk1.uk ) 1 276.419474 UNLIMITED
+  es1.es_at1.at ( es1.es at1.at ) 1 15.946906 UNLIMITED
+  es1.es_be1.be ( es1.es be1.be ) 1 0.651945 UNLIMITED
+  es1.es_ch1.ch ( es1.es ch1.ch ) 1 94.143457 UNLIMITED
+  es1.es_cz1.cz ( es1.es cz1.cz ) 1 0.461209 UNLIMITED
+  es1.es_de1.de ( es1.es de1.de ) 1 155.162761 UNLIMITED
+  es1.es_fr1.fr ( es1.es fr1.fr ) 1 2.764667 UNLIMITED
+  es1.es_gr1.gr ( es1.es gr1.gr ) 1 1.1059 UNLIMITED
+  es1.es_hr1.hr ( es1.es hr1.hr ) 1 4.842243 UNLIMITED
+  es1.es_hu1.hu ( es1.es hu1.hu ) 1 6.576865 UNLIMITED
+  es1.es_ie1.ie ( es1.es ie1.ie ) 1 0.025866 UNLIMITED
+  es1.es_il1.il ( es1.es il1.il ) 1 0.825587 UNLIMITED
+  es1.es_it1.it ( es1.es it1.it ) 1 6.450739 UNLIMITED
+  es1.es_lu1.lu ( es1.es lu1.lu ) 1 1.50981 UNLIMITED
+  es1.es_nl1.nl ( es1.es nl1.nl ) 1 26.288062 UNLIMITED
+  es1.es_ny1.ny ( es1.es ny1.ny ) 1 2.291818 UNLIMITED
+  es1.es_pl1.pl ( es1.es pl1.pl ) 1 0.01985 UNLIMITED
+  es1.es_pt1.pt ( es1.es pt1.pt ) 1 23.822714 UNLIMITED
+  es1.es_se1.se ( es1.es se1.se ) 1 3.807981 UNLIMITED
+  es1.es_si1.si ( es1.es si1.si ) 1 4.574807 UNLIMITED
+  es1.es_sk1.sk ( es1.es sk1.sk ) 1 0.060167 UNLIMITED
+  es1.es_uk1.uk ( es1.es uk1.uk ) 1 21.209141 UNLIMITED
+  fr1.fr_at1.at ( fr1.fr at1.at ) 1 1.969444 UNLIMITED
+  fr1.fr_be1.be ( fr1.fr be1.be ) 1 0.789375 UNLIMITED
+  fr1.fr_ch1.ch ( fr1.fr ch1.ch ) 1 76.446296 UNLIMITED
+  fr1.fr_cz1.cz ( fr1.fr cz1.cz ) 1 0.463683 UNLIMITED
+  fr1.fr_de1.de ( fr1.fr de1.de ) 1 31.977541 UNLIMITED
+  fr1.fr_es1.es ( fr1.fr es1.es ) 1 7.572665 UNLIMITED
+  fr1.fr_gr1.gr ( fr1.fr gr1.gr ) 1 2.824609 UNLIMITED
+  fr1.fr_hr1.hr ( fr1.fr hr1.hr ) 1 0.020693 UNLIMITED
+  fr1.fr_hu1.hu ( fr1.fr hu1.hu ) 1 0.527618 UNLIMITED
+  fr1.fr_ie1.ie ( fr1.fr ie1.ie ) 1 0.110101 UNLIMITED
+  fr1.fr_il1.il ( fr1.fr il1.il ) 1 5.352092 UNLIMITED
+  fr1.fr_it1.it ( fr1.fr it1.it ) 1 1.410112 UNLIMITED
+  fr1.fr_lu1.lu ( fr1.fr lu1.lu ) 1 0.01642 UNLIMITED
+  fr1.fr_nl1.nl ( fr1.fr nl1.nl ) 1 122.604014 UNLIMITED
+  fr1.fr_ny1.ny ( fr1.fr ny1.ny ) 1 2.259035 UNLIMITED
+  fr1.fr_pl1.pl ( fr1.fr pl1.pl ) 1 8.302659 UNLIMITED
+  fr1.fr_pt1.pt ( fr1.fr pt1.pt ) 1 0.390807 UNLIMITED
+  fr1.fr_se1.se ( fr1.fr se1.se ) 1 29.449496 UNLIMITED
+  fr1.fr_si1.si ( fr1.fr si1.si ) 1 5.842373 UNLIMITED
+  fr1.fr_sk1.sk ( fr1.fr sk1.sk ) 1 2.377852 UNLIMITED
+  fr1.fr_uk1.uk ( fr1.fr uk1.uk ) 1 17.716392 UNLIMITED
+  gr1.gr_at1.at ( gr1.gr at1.at ) 1 35.544965 UNLIMITED
+  gr1.gr_be1.be ( gr1.gr be1.be ) 1 0.191355 UNLIMITED
+  gr1.gr_ch1.ch ( gr1.gr ch1.ch ) 1 53.898233 UNLIMITED
+  gr1.gr_cz1.cz ( gr1.gr cz1.cz ) 1 0.284474 UNLIMITED
+  gr1.gr_de1.de ( gr1.gr de1.de ) 1 3786.235823 UNLIMITED
+  gr1.gr_es1.es ( gr1.gr es1.es ) 1 2.738407 UNLIMITED
+  gr1.gr_fr1.fr ( gr1.gr fr1.fr ) 1 1.83522 UNLIMITED
+  gr1.gr_hr1.hr ( gr1.gr hr1.hr ) 1 2.714508 UNLIMITED
+  gr1.gr_hu1.hu ( gr1.gr hu1.hu ) 1 47.406333 UNLIMITED
+  gr1.gr_ie1.ie ( gr1.gr ie1.ie ) 1 0.038575 UNLIMITED
+  gr1.gr_il1.il ( gr1.gr il1.il ) 1 0.077655 UNLIMITED
+  gr1.gr_it1.it ( gr1.gr it1.it ) 1 6.720424 UNLIMITED
+  gr1.gr_lu1.lu ( gr1.gr lu1.lu ) 1 0.261644 UNLIMITED
+  gr1.gr_nl1.nl ( gr1.gr nl1.nl ) 1 24.815083 UNLIMITED
+  gr1.gr_ny1.ny ( gr1.gr ny1.ny ) 1 3.747983 UNLIMITED
+  gr1.gr_pl1.pl ( gr1.gr pl1.pl ) 1 0.878164 UNLIMITED
+  gr1.gr_pt1.pt ( gr1.gr pt1.pt ) 1 1.302091 UNLIMITED
+  gr1.gr_se1.se ( gr1.gr se1.se ) 1 156.173968 UNLIMITED
+  gr1.gr_si1.si ( gr1.gr si1.si ) 1 5.424012 UNLIMITED
+  gr1.gr_sk1.sk ( gr1.gr sk1.sk ) 1 0.049877 UNLIMITED
+  gr1.gr_uk1.uk ( gr1.gr uk1.uk ) 1 376.276815 UNLIMITED
+  hr1.hr_at1.at ( hr1.hr at1.at ) 1 1398.169504 UNLIMITED
+  hr1.hr_be1.be ( hr1.hr be1.be ) 1 0.002699 UNLIMITED
+  hr1.hr_ch1.ch ( hr1.hr ch1.ch ) 1 12.33461 UNLIMITED
+  hr1.hr_de1.de ( hr1.hr de1.de ) 1 93.272097 UNLIMITED
+  hr1.hr_es1.es ( hr1.hr es1.es ) 1 0.255965 UNLIMITED
+  hr1.hr_fr1.fr ( hr1.hr fr1.fr ) 1 0.002643 UNLIMITED
+  hr1.hr_hu1.hu ( hr1.hr hu1.hu ) 1 368.107537 UNLIMITED
+  hr1.hr_ie1.ie ( hr1.hr ie1.ie ) 1 0.002699 UNLIMITED
+  hr1.hr_nl1.nl ( hr1.hr nl1.nl ) 1 2.892311 UNLIMITED
+  hr1.hr_ny1.ny ( hr1.hr ny1.ny ) 1 4.875251 UNLIMITED
+  hr1.hr_pl1.pl ( hr1.hr pl1.pl ) 1 0.002249 UNLIMITED
+  hr1.hr_pt1.pt ( hr1.hr pt1.pt ) 1 2.242953 UNLIMITED
+  hr1.hr_se1.se ( hr1.hr se1.se ) 1 78.581004 UNLIMITED
+  hr1.hr_si1.si ( hr1.hr si1.si ) 1 6.838003 UNLIMITED
+  hr1.hr_sk1.sk ( hr1.hr sk1.sk ) 1 0.28453 UNLIMITED
+  hr1.hr_uk1.uk ( hr1.hr uk1.uk ) 1 0.21306 UNLIMITED
+  hu1.hu_at1.at ( hu1.hu at1.at ) 1 2812.560266 UNLIMITED
+  hu1.hu_be1.be ( hu1.hu be1.be ) 1 0.027385 UNLIMITED
+  hu1.hu_ch1.ch ( hu1.hu ch1.ch ) 1 47.944016 UNLIMITED
+  hu1.hu_de1.de ( hu1.hu de1.de ) 1 325.513026 UNLIMITED
+  hu1.hu_es1.es ( hu1.hu es1.es ) 1 0.005679 UNLIMITED
+  hu1.hu_fr1.fr ( hu1.hu fr1.fr ) 1 0.098292 UNLIMITED
+  hu1.hu_gr1.gr ( hu1.hu gr1.gr ) 1 0.201533 UNLIMITED
+  hu1.hu_hr1.hr ( hu1.hu hr1.hr ) 1 437.094362 UNLIMITED
+  hu1.hu_ie1.ie ( hu1.hu ie1.ie ) 1 0.003149 UNLIMITED
+  hu1.hu_il1.il ( hu1.hu il1.il ) 1 0.005848 UNLIMITED
+  hu1.hu_nl1.nl ( hu1.hu nl1.nl ) 1 20.71155 UNLIMITED
+  hu1.hu_ny1.ny ( hu1.hu ny1.ny ) 1 3.39187 UNLIMITED
+  hu1.hu_pl1.pl ( hu1.hu pl1.pl ) 1 0.006748 UNLIMITED
+  hu1.hu_pt1.pt ( hu1.hu pt1.pt ) 1 0.03059 UNLIMITED
+  hu1.hu_se1.se ( hu1.hu se1.se ) 1 227.337787 UNLIMITED
+  hu1.hu_si1.si ( hu1.hu si1.si ) 1 16.825745 UNLIMITED
+  hu1.hu_sk1.sk ( hu1.hu sk1.sk ) 1 2.572918 UNLIMITED
+  hu1.hu_uk1.uk ( hu1.hu uk1.uk ) 1 2.846427 UNLIMITED
+  ie1.ie_at1.at ( ie1.ie at1.at ) 1 0.003374 UNLIMITED
+  ie1.ie_be1.be ( ie1.ie be1.be ) 1 0.010122 UNLIMITED
+  ie1.ie_ch1.ch ( ie1.ie ch1.ch ) 1 0.912577 UNLIMITED
+  ie1.ie_de1.de ( ie1.ie de1.de ) 1 6.886025 UNLIMITED
+  ie1.ie_es1.es ( ie1.ie es1.es ) 1 0.501808 UNLIMITED
+  ie1.ie_fr1.fr ( ie1.ie fr1.fr ) 1 1.213471 UNLIMITED
+  ie1.ie_gr1.gr ( ie1.ie gr1.gr ) 1 0.093794 UNLIMITED
+  ie1.ie_hu1.hu ( ie1.ie hu1.hu ) 1 0.091038 UNLIMITED
+  ie1.ie_il1.il ( ie1.ie il1.il ) 1 0.084347 UNLIMITED
+  ie1.ie_nl1.nl ( ie1.ie nl1.nl ) 1 2.805659 UNLIMITED
+  ie1.ie_ny1.ny ( ie1.ie ny1.ny ) 1 1.901404 UNLIMITED
+  ie1.ie_pt1.pt ( ie1.ie pt1.pt ) 1 0.006298 UNLIMITED
+  ie1.ie_se1.se ( ie1.ie se1.se ) 1 7.533922 UNLIMITED
+  ie1.ie_si1.si ( ie1.ie si1.si ) 1 0.271035 UNLIMITED
+  ie1.ie_sk1.sk ( ie1.ie sk1.sk ) 1 0.168694 UNLIMITED
+  ie1.ie_uk1.uk ( ie1.ie uk1.uk ) 1 0.095874 UNLIMITED
+  il1.il_at1.at ( il1.il at1.at ) 1 27.177978 UNLIMITED
+  il1.il_be1.be ( il1.il be1.be ) 1 0.03014 UNLIMITED
+  il1.il_ch1.ch ( il1.il ch1.ch ) 1 1.680134 UNLIMITED
+  il1.il_cz1.cz ( il1.il cz1.cz ) 1 0.035313 UNLIMITED
+  il1.il_de1.de ( il1.il de1.de ) 1 204.278693 UNLIMITED
+  il1.il_es1.es ( il1.il es1.es ) 1 1.365351 UNLIMITED
+  il1.il_fr1.fr ( il1.il fr1.fr ) 1 12.78654 UNLIMITED
+  il1.il_gr1.gr ( il1.il gr1.gr ) 1 1.769935 UNLIMITED
+  il1.il_hu1.hu ( il1.il hu1.hu ) 1 0.815185 UNLIMITED
+  il1.il_ie1.ie ( il1.il ie1.ie ) 1 0.013439 UNLIMITED
+  il1.il_it1.it ( il1.il it1.it ) 1 5.225516 UNLIMITED
+  il1.il_nl1.nl ( il1.il nl1.nl ) 1 9.550375 UNLIMITED
+  il1.il_ny1.ny ( il1.il ny1.ny ) 1 0.567261 UNLIMITED
+  il1.il_pt1.pt ( il1.il pt1.pt ) 1 0.093962 UNLIMITED
+  il1.il_se1.se ( il1.il se1.se ) 1 2.89726 UNLIMITED
+  il1.il_si1.si ( il1.il si1.si ) 1 0.1507 UNLIMITED
+  il1.il_uk1.uk ( il1.il uk1.uk ) 1 7.251809 UNLIMITED
+  it1.it_at1.at ( it1.it at1.at ) 1 136.735494 UNLIMITED
+  it1.it_be1.be ( it1.it be1.be ) 1 6.89266 UNLIMITED
+  it1.it_ch1.ch ( it1.it ch1.ch ) 1 16.143547 UNLIMITED
+  it1.it_cz1.cz ( it1.it cz1.cz ) 1 0.010347 UNLIMITED
+  it1.it_de1.de ( it1.it de1.de ) 1 223.055438 UNLIMITED
+  it1.it_es1.es ( it1.it es1.es ) 1 4.57925 UNLIMITED
+  it1.it_fr1.fr ( it1.it fr1.fr ) 1 4.587403 UNLIMITED
+  it1.it_gr1.gr ( it1.it gr1.gr ) 1 2.647031 UNLIMITED
+  it1.it_hr1.hr ( it1.it hr1.hr ) 1 0.205806 UNLIMITED
+  it1.it_hu1.hu ( it1.it hu1.hu ) 1 3.100255 UNLIMITED
+  it1.it_ie1.ie ( it1.it ie1.ie ) 1 0.046897 UNLIMITED
+  it1.it_il1.il ( it1.it il1.il ) 1 1.193959 UNLIMITED
+  it1.it_lu1.lu ( it1.it lu1.lu ) 1 0.028172 UNLIMITED
+  it1.it_nl1.nl ( it1.it nl1.nl ) 1 180.566361 UNLIMITED
+  it1.it_ny1.ny ( it1.it ny1.ny ) 1 6.130164 UNLIMITED
+  it1.it_pl1.pl ( it1.it pl1.pl ) 1 0.011696 UNLIMITED
+  it1.it_pt1.pt ( it1.it pt1.pt ) 1 8.485523 UNLIMITED
+  it1.it_se1.se ( it1.it se1.se ) 1 29.179248 UNLIMITED
+  it1.it_si1.si ( it1.it si1.si ) 1 0.535153 UNLIMITED
+  it1.it_sk1.sk ( it1.it sk1.sk ) 1 0.182133 UNLIMITED
+  it1.it_uk1.uk ( it1.it uk1.uk ) 1 32.669973 UNLIMITED
+  lu1.lu_at1.at ( lu1.lu at1.at ) 1 0.209855 UNLIMITED
+  lu1.lu_be1.be ( lu1.lu be1.be ) 1 0.011134 UNLIMITED
+  lu1.lu_ch1.ch ( lu1.lu ch1.ch ) 1 2.729353 UNLIMITED
+  lu1.lu_de1.de ( lu1.lu de1.de ) 1 112.932629 UNLIMITED
+  lu1.lu_es1.es ( lu1.lu es1.es ) 1 1.540849 UNLIMITED
+  lu1.lu_fr1.fr ( lu1.lu fr1.fr ) 1 0.103297 UNLIMITED
+  lu1.lu_hu1.hu ( lu1.lu hu1.hu ) 1 0.042623 UNLIMITED
+  lu1.lu_it1.it ( lu1.lu it1.it ) 1 0.005454 UNLIMITED
+  lu1.lu_nl1.nl ( lu1.lu nl1.nl ) 1 0.021424 UNLIMITED
+  lu1.lu_ny1.ny ( lu1.lu ny1.ny ) 1 0.079848 UNLIMITED
+  lu1.lu_pl1.pl ( lu1.lu pl1.pl ) 1 0.005454 UNLIMITED
+  lu1.lu_se1.se ( lu1.lu se1.se ) 1 1.7809 UNLIMITED
+  lu1.lu_si1.si ( lu1.lu si1.si ) 1 0.017038 UNLIMITED
+  lu1.lu_sk1.sk ( lu1.lu sk1.sk ) 1 0.004499 UNLIMITED
+  lu1.lu_uk1.uk ( lu1.lu uk1.uk ) 1 6.088441 UNLIMITED
+  nl1.nl_at1.at ( nl1.nl at1.at ) 1 134.429168 UNLIMITED
+  nl1.nl_be1.be ( nl1.nl be1.be ) 1 11.635993 UNLIMITED
+  nl1.nl_ch1.ch ( nl1.nl ch1.ch ) 1 1.80986 UNLIMITED
+  nl1.nl_cz1.cz ( nl1.nl cz1.cz ) 1 0.326647 UNLIMITED
+  nl1.nl_de1.de ( nl1.nl de1.de ) 1 43.879676 UNLIMITED
+  nl1.nl_es1.es ( nl1.nl es1.es ) 1 1.586003 UNLIMITED
+  nl1.nl_fr1.fr ( nl1.nl fr1.fr ) 1 3.963011 UNLIMITED
+  nl1.nl_gr1.gr ( nl1.nl gr1.gr ) 1 1.12142 UNLIMITED
+  nl1.nl_hr1.hr ( nl1.nl hr1.hr ) 1 6.031703 UNLIMITED
+  nl1.nl_hu1.hu ( nl1.nl hu1.hu ) 1 36.523108 UNLIMITED
+  nl1.nl_ie1.ie ( nl1.nl ie1.ie ) 1 7.669326 UNLIMITED
+  nl1.nl_il1.il ( nl1.nl il1.il ) 1 2.562515 UNLIMITED
+  nl1.nl_it1.it ( nl1.nl it1.it ) 1 0.035538 UNLIMITED
+  nl1.nl_lu1.lu ( nl1.nl lu1.lu ) 1 0.022717 UNLIMITED
+  nl1.nl_pl1.pl ( nl1.nl pl1.pl ) 1 10.819627 UNLIMITED
+  nl1.nl_pt1.pt ( nl1.nl pt1.pt ) 1 3.938944 UNLIMITED
+  nl1.nl_se1.se ( nl1.nl se1.se ) 1 47.543593 UNLIMITED
+  nl1.nl_si1.si ( nl1.nl si1.si ) 1 132.508252 UNLIMITED
+  nl1.nl_sk1.sk ( nl1.nl sk1.sk ) 1 0.596895 UNLIMITED
+  nl1.nl_uk1.uk ( nl1.nl uk1.uk ) 1 122.659627 UNLIMITED
+  ny1.ny_at1.at ( ny1.ny at1.at ) 1 405.835175 UNLIMITED
+  ny1.ny_be1.be ( ny1.ny be1.be ) 1 38.617667 UNLIMITED
+  ny1.ny_ch1.ch ( ny1.ny ch1.ch ) 1 1250.537627 UNLIMITED
+  ny1.ny_de1.de ( ny1.ny de1.de ) 1 478.275275 UNLIMITED
+  ny1.ny_es1.es ( ny1.ny es1.es ) 1 28.830896 UNLIMITED
+  ny1.ny_fr1.fr ( ny1.ny fr1.fr ) 1 0.610053 UNLIMITED
+  ny1.ny_gr1.gr ( ny1.ny gr1.gr ) 1 1.72152 UNLIMITED
+  ny1.ny_hr1.hr ( ny1.ny hr1.hr ) 1 6.212093 UNLIMITED
+  ny1.ny_hu1.hu ( ny1.ny hu1.hu ) 1 89.177899 UNLIMITED
+  ny1.ny_ie1.ie ( ny1.ny ie1.ie ) 1 1.802043 UNLIMITED
+  ny1.ny_il1.il ( ny1.ny il1.il ) 1 12.776925 UNLIMITED
+  ny1.ny_it1.it ( ny1.ny it1.it ) 1 1.324134 UNLIMITED
+  ny1.ny_lu1.lu ( ny1.ny lu1.lu ) 1 0.519746 UNLIMITED
+  ny1.ny_nl1.nl ( ny1.ny nl1.nl ) 1 0.029915 UNLIMITED
+  ny1.ny_pl1.pl ( ny1.ny pl1.pl ) 1 1.041066 UNLIMITED
+  ny1.ny_pt1.pt ( ny1.ny pt1.pt ) 1 8.136102 UNLIMITED
+  ny1.ny_se1.se ( ny1.ny se1.se ) 1 176.029679 UNLIMITED
+  ny1.ny_si1.si ( ny1.ny si1.si ) 1 24.89437 UNLIMITED
+  ny1.ny_sk1.sk ( ny1.ny sk1.sk ) 1 1.695991 UNLIMITED
+  ny1.ny_uk1.uk ( ny1.ny uk1.uk ) 1 477.408694 UNLIMITED
+  pl1.pl_at1.at ( pl1.pl at1.at ) 1 42.171427 UNLIMITED
+  pl1.pl_be1.be ( pl1.pl be1.be ) 1 0.593296 UNLIMITED
+  pl1.pl_ch1.ch ( pl1.pl ch1.ch ) 1 0.14935 UNLIMITED
+  pl1.pl_de1.de ( pl1.pl de1.de ) 1 19.410471 UNLIMITED
+  pl1.pl_es1.es ( pl1.pl es1.es ) 1 4.405832 UNLIMITED
+  pl1.pl_fr1.fr ( pl1.pl fr1.fr ) 1 0.8081 UNLIMITED
+  pl1.pl_gr1.gr ( pl1.pl gr1.gr ) 1 0.197934 UNLIMITED
+  pl1.pl_hr1.hr ( pl1.pl hr1.hr ) 1 0.411669 UNLIMITED
+  pl1.pl_hu1.hu ( pl1.pl hu1.hu ) 1 7.241406 UNLIMITED
+  pl1.pl_ie1.ie ( pl1.pl ie1.ie ) 1 0.018894 UNLIMITED
+  pl1.pl_il1.il ( pl1.pl il1.il ) 1 0.463795 UNLIMITED
+  pl1.pl_it1.it ( pl1.pl it1.it ) 1 1.068282 UNLIMITED
+  pl1.pl_lu1.lu ( pl1.pl lu1.lu ) 1 0.005848 UNLIMITED
+  pl1.pl_nl1.nl ( pl1.pl nl1.nl ) 1 27.147107 UNLIMITED
+  pl1.pl_ny1.ny ( pl1.pl ny1.ny ) 1 4.682715 UNLIMITED
+  pl1.pl_pt1.pt ( pl1.pl pt1.pt ) 1 0.336882 UNLIMITED
+  pl1.pl_se1.se ( pl1.pl se1.se ) 1 98.235294 UNLIMITED
+  pl1.pl_si1.si ( pl1.pl si1.si ) 1 4.45003 UNLIMITED
+  pl1.pl_uk1.uk ( pl1.pl uk1.uk ) 1 17.683216 UNLIMITED
+  pt1.pt_at1.at ( pt1.pt at1.at ) 1 0.897114 UNLIMITED
+  pt1.pt_ch1.ch ( pt1.pt ch1.ch ) 1 4.410837 UNLIMITED
+  pt1.pt_cz1.cz ( pt1.pt cz1.cz ) 1 0.148619 UNLIMITED
+  pt1.pt_de1.de ( pt1.pt de1.de ) 1 16.731895 UNLIMITED
+  pt1.pt_es1.es ( pt1.pt es1.es ) 1 1.070531 UNLIMITED
+  pt1.pt_fr1.fr ( pt1.pt fr1.fr ) 1 0.61607 UNLIMITED
+  pt1.pt_gr1.gr ( pt1.pt gr1.gr ) 1 0.002474 UNLIMITED
+  pt1.pt_hr1.hr ( pt1.pt hr1.hr ) 1 0.26395 UNLIMITED
+  pt1.pt_hu1.hu ( pt1.pt hu1.hu ) 1 4.672425 UNLIMITED
+  pt1.pt_il1.il ( pt1.pt il1.il ) 1 0.01119 UNLIMITED
+  pt1.pt_it1.it ( pt1.pt it1.it ) 1 10.14159 UNLIMITED
+  pt1.pt_nl1.nl ( pt1.pt nl1.nl ) 1 1.836457 UNLIMITED
+  pt1.pt_ny1.ny ( pt1.pt ny1.ny ) 1 0.718354 UNLIMITED
+  pt1.pt_pl1.pl ( pt1.pt pl1.pl ) 1 0.691813 UNLIMITED
+  pt1.pt_se1.se ( pt1.pt se1.se ) 1 566.159123 UNLIMITED
+  pt1.pt_si1.si ( pt1.pt si1.si ) 1 1.247659 UNLIMITED
+  pt1.pt_uk1.uk ( pt1.pt uk1.uk ) 1 50.339018 UNLIMITED
+  se1.se_at1.at ( se1.se at1.at ) 1 11.985189 UNLIMITED
+  se1.se_be1.be ( se1.se be1.be ) 1 8.609851 UNLIMITED
+  se1.se_ch1.ch ( se1.se ch1.ch ) 1 182.588044 UNLIMITED
+  se1.se_cz1.cz ( se1.se cz1.cz ) 1 16.749158 UNLIMITED
+  se1.se_de1.de ( se1.se de1.de ) 1 209.556054 UNLIMITED
+  se1.se_es1.es ( se1.se es1.es ) 1 10.085359 UNLIMITED
+  se1.se_fr1.fr ( se1.se fr1.fr ) 1 18.72192 UNLIMITED
+  se1.se_gr1.gr ( se1.se gr1.gr ) 1 7.136142 UNLIMITED
+  se1.se_hr1.hr ( se1.se hr1.hr ) 1 0.928941 UNLIMITED
+  se1.se_hu1.hu ( se1.se hu1.hu ) 1 19.596259 UNLIMITED
+  se1.se_ie1.ie ( se1.se ie1.ie ) 1 13.617133 UNLIMITED
+  se1.se_il1.il ( se1.se il1.il ) 1 18.919123 UNLIMITED
+  se1.se_it1.it ( se1.se it1.it ) 1 1.046633 UNLIMITED
+  se1.se_lu1.lu ( se1.se lu1.lu ) 1 102.418451 UNLIMITED
+  se1.se_nl1.nl ( se1.se nl1.nl ) 1 121.288315 UNLIMITED
+  se1.se_ny1.ny ( se1.se ny1.ny ) 1 25.93999 UNLIMITED
+  se1.se_pl1.pl ( se1.se pl1.pl ) 1 23.394963 UNLIMITED
+  se1.se_pt1.pt ( se1.se pt1.pt ) 1 342.168784 UNLIMITED
+  se1.se_si1.si ( se1.se si1.si ) 1 9.74769 UNLIMITED
+  se1.se_sk1.sk ( se1.se sk1.sk ) 1 4.503169 UNLIMITED
+  se1.se_uk1.uk ( se1.se uk1.uk ) 1 112.722099 UNLIMITED
+  si1.si_at1.at ( si1.si at1.at ) 1 1720.623773 UNLIMITED
+  si1.si_be1.be ( si1.si be1.be ) 1 0.011752 UNLIMITED
+  si1.si_ch1.ch ( si1.si ch1.ch ) 1 21.987325 UNLIMITED
+  si1.si_de1.de ( si1.si de1.de ) 1 161.752223 UNLIMITED
+  si1.si_es1.es ( si1.si es1.es ) 1 0.002249 UNLIMITED
+  si1.si_fr1.fr ( si1.si fr1.fr ) 1 0.068321 UNLIMITED
+  si1.si_gr1.gr ( si1.si gr1.gr ) 1 0.039812 UNLIMITED
+  si1.si_hr1.hr ( si1.si hr1.hr ) 1 0.597907 UNLIMITED
+  si1.si_hu1.hu ( si1.si hu1.hu ) 1 308.226297 UNLIMITED
+  si1.si_ie1.ie ( si1.si ie1.ie ) 1 0.086371 UNLIMITED
+  si1.si_il1.il ( si1.si il1.il ) 1 0.006748 UNLIMITED
+  si1.si_it1.it ( si1.si it1.it ) 1 0.011246 UNLIMITED
+  si1.si_lu1.lu ( si1.si lu1.lu ) 1 0.069727 UNLIMITED
+  si1.si_nl1.nl ( si1.si nl1.nl ) 1 7.936875 UNLIMITED
+  si1.si_ny1.ny ( si1.si ny1.ny ) 1 0.533635 UNLIMITED
+  si1.si_pl1.pl ( si1.si pl1.pl ) 1 0.155704 UNLIMITED
+  si1.si_pt1.pt ( si1.si pt1.pt ) 1 0.770987 UNLIMITED
+  si1.si_se1.se ( si1.si se1.se ) 1 160.216209 UNLIMITED
+  si1.si_sk1.sk ( si1.si sk1.sk ) 1 0.014845 UNLIMITED
+  si1.si_uk1.uk ( si1.si uk1.uk ) 1 0.946541 UNLIMITED
+  sk1.sk_at1.at ( sk1.sk at1.at ) 1 8.09331 UNLIMITED
+  sk1.sk_be1.be ( sk1.sk be1.be ) 1 0.153624 UNLIMITED
+  sk1.sk_ch1.ch ( sk1.sk ch1.ch ) 1 1.616986 UNLIMITED
+  sk1.sk_de1.de ( sk1.sk de1.de ) 1 3.266137 UNLIMITED
+  sk1.sk_es1.es ( sk1.sk es1.es ) 1 0.004892 UNLIMITED
+  sk1.sk_fr1.fr ( sk1.sk fr1.fr ) 1 0.080017 UNLIMITED
+  sk1.sk_gr1.gr ( sk1.sk gr1.gr ) 1 0.087271 UNLIMITED
+  sk1.sk_hr1.hr ( sk1.sk hr1.hr ) 1 0.024742 UNLIMITED
+  sk1.sk_hu1.hu ( sk1.sk hu1.hu ) 1 13.367522 UNLIMITED
+  sk1.sk_ie1.ie ( sk1.sk ie1.ie ) 1 0.002924 UNLIMITED
+  sk1.sk_il1.il ( sk1.sk il1.il ) 1 0.002699 UNLIMITED
+  sk1.sk_lu1.lu ( sk1.sk lu1.lu ) 1 0.23544 UNLIMITED
+  sk1.sk_nl1.nl ( sk1.sk nl1.nl ) 1 9.812581 UNLIMITED
+  sk1.sk_ny1.ny ( sk1.sk ny1.ny ) 1 1.003278 UNLIMITED
+  sk1.sk_pt1.pt ( sk1.sk pt1.pt ) 1 0.265074 UNLIMITED
+  sk1.sk_se1.se ( sk1.sk se1.se ) 1 0.544094 UNLIMITED
+  sk1.sk_si1.si ( sk1.sk si1.si ) 1 0.468913 UNLIMITED
+  sk1.sk_uk1.uk ( sk1.sk uk1.uk ) 1 0.651102 UNLIMITED
+  uk1.uk_at1.at ( uk1.uk at1.at ) 1 0.883393 UNLIMITED
+  uk1.uk_be1.be ( uk1.uk be1.be ) 1 9.710015 UNLIMITED
+  uk1.uk_ch1.ch ( uk1.uk ch1.ch ) 1 177.342735 UNLIMITED
+  uk1.uk_cz1.cz ( uk1.uk cz1.cz ) 1 0.810068 UNLIMITED
+  uk1.uk_de1.de ( uk1.uk de1.de ) 1 259.814718 UNLIMITED
+  uk1.uk_es1.es ( uk1.uk es1.es ) 1 4.676192 UNLIMITED
+  uk1.uk_fr1.fr ( uk1.uk fr1.fr ) 1 50.735955 UNLIMITED
+  uk1.uk_gr1.gr ( uk1.uk gr1.gr ) 1 4.522062 UNLIMITED
+  uk1.uk_hr1.hr ( uk1.uk hr1.hr ) 1 1.278587 UNLIMITED
+  uk1.uk_hu1.hu ( uk1.uk hu1.hu ) 1 1.561374 UNLIMITED
+  uk1.uk_ie1.ie ( uk1.uk ie1.ie ) 1 0.337388 UNLIMITED
+  uk1.uk_il1.il ( uk1.uk il1.il ) 1 0.961836 UNLIMITED
+  uk1.uk_it1.it ( uk1.uk it1.it ) 1 0.119716 UNLIMITED
+  uk1.uk_lu1.lu ( uk1.uk lu1.lu ) 1 72.565439 UNLIMITED
+  uk1.uk_nl1.nl ( uk1.uk nl1.nl ) 1 210.807931 UNLIMITED
+  uk1.uk_ny1.ny ( uk1.uk ny1.ny ) 1 23.835985 UNLIMITED
+  uk1.uk_pl1.pl ( uk1.uk pl1.pl ) 1 1.931038 UNLIMITED
+  uk1.uk_pt1.pt ( uk1.uk pt1.pt ) 1 166.533061 UNLIMITED
+  uk1.uk_se1.se ( uk1.uk se1.se ) 1 485.294567 UNLIMITED
+  uk1.uk_si1.si ( uk1.uk si1.si ) 1 12.101194 UNLIMITED
+  uk1.uk_sk1.sk ( uk1.uk sk1.sk ) 1 0.246968 UNLIMITED
+)
+
+# ADMISSIBLE PATHS SECTION
+#
+# <demand_id> ( {<path_id> ( <link_id>+ )}+ )
+
+ADMISSIBLE_PATHS ( 
+)

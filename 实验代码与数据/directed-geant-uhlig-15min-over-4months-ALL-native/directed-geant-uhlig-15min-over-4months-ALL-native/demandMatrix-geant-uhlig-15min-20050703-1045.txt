@@ -1,0 +1,81 @@
+?SNDlib native format; type: network; version: 1.0
+# network demandMatrix-15min-20050703-1045-geant
+
+# META SECTION
+#
+# <attribute> <content>
+
+META (
+  granularity  = 15min
+  time  = 20050703-1045
+  unit  = MBITPERSEC
+  origin  = Steve Uhlig, http://totem.info.ucl.ac.be/dataset.html
+)
+
+# NODE SECTION
+#
+# <node_id> [(<longitude>, <latitude>)]
+
+NODES (
+  at1.at ( 16.3729 48.2091 )
+  be1.be ( 4.3518 50.8469 )
+  ch1.ch ( 6.1399 46.2038 )
+  cz1.cz ( 14.4423 50.0785 )
+  de1.de ( 8.6842 50.1122 )
+  es1.es ( -3.7033 40.4167 )
+  fr1.fr ( 2.351 48.8566 )
+  gr1.gr ( 23.5808 37.9778 )
+  hr1.hr ( 15.9644 45.8071 )
+  hu1.hu ( 19.0936 47.4976 )
+  ie1.ie ( -6.2573 53.3416 )
+  il1.il ( 34.8097 32.0714 )
+  it1.it ( 9.19 45.4642 )
+  lu1.lu ( 6.1296 49.6112 )
+  nl1.nl ( 4.9407 52.3236 )
+  ny1.ny ( -73.94384 40.6698 )
+  pl1.pl ( 16.8874 52.3963 )
+  pt1.pt ( -9.1363 38.7073 )
+  se1.se ( 17.8742 59.3617 )
+  si1.si ( 14.5148 46.0574 )
+  sk1.sk ( 17.1297 48.1531 )
+  uk1.uk ( -0.1264 51.5086 )
+)
+
+# LINK SECTION
+#
+# <link_id> ( <source> <target> ) <pre_installed_capacity> <pre_installed_capacity_cost> <routing_cost> <setup_cost> ( {<module_capacity> <module_cost>}* )
+
+LINKS (
+)
+
+# DEMAND SECTION
+#
+# <demand_id> ( <source> <target> ) <routing_unit> <demand_value> <max_path_length>
+
+DEMANDS (
+  at1.at_be1.be ( at1.at be1.be ) 1 38.147854 UNLIMITED
+  at1.at_ch1.ch ( at1.at ch1.ch ) 1 137.095093 UNLIMITED
+  at1.at_de1.de ( at1.at de1.de ) 1 77.776222 UNLIMITED
+  at1.at_es1.es ( at1.at es1.es ) 1 51.706338 UNLIMITED
+  at1.at_fr1.fr ( at1.at fr1.fr ) 1 0.28498 UNLIMITED
+  at1.at_gr1.gr ( at1.at gr1.gr ) 1 101.977991 UNLIMITED
+  at1.at_hr1.hr ( at1.at hr1.hr ) 1 643.872198 UNLIMITED
+  at1.at_hu1.hu ( at1.at hu1.hu ) 1 469.298234 UNLIMITED
+  at1.at_ie1.ie ( at1.at ie1.ie ) 1 0.010796 UNLIMITED
+  at1.at_il1.il ( at1.at il1.il ) 1 0.016644 UNLIMITED
+  at1.at_it1.it ( at1.at it1.it ) 1 35.171365 UNLIMITED
+  at1.at_nl1.nl ( at1.at nl1.nl ) 1 13.331928 UNLIMITED
+  at1.at_ny1.ny ( at1.at ny1.ny ) 1 4.263005 UNLIMITED
+  at1.at_pl1.pl ( at1.at pl1.pl ) 1 0.002249 UNLIMITED
+  at1.at_pt1.pt ( at1.at pt1.pt ) 1 0.04819 UNLIMITED
+  at1.at_se1.se ( at1.at se1.se ) 1 703.662061 UNLIMITED
+  at1.at_si1.si ( at1.at si1.si ) 1 1200.360386 UNLIMITED
+  at1.at_uk1.uk ( at1.at uk1.uk ) 1 1.93205 UNLIMITED
+)
+
+# ADMISSIBLE PATHS SECTION
+#
+# <demand_id> ( {<path_id> ( <link_id>+ )}+ )
+
+ADMISSIBLE_PATHS ( 
+)

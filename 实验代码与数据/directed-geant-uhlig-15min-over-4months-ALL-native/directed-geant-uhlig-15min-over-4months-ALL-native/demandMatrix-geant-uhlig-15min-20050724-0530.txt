@@ -1,0 +1,95 @@
+?SNDlib native format; type: network; version: 1.0
+# network demandMatrix-15min-20050724-0530-geant
+
+# META SECTION
+#
+# <attribute> <content>
+
+META (
+  granularity  = 15min
+  time  = 20050724-0530
+  unit  = MBITPERSEC
+  origin  = Steve Uhlig, http://totem.info.ucl.ac.be/dataset.html
+)
+
+# NODE SECTION
+#
+# <node_id> [(<longitude>, <latitude>)]
+
+NODES (
+  at1.at ( 16.3729 48.2091 )
+  be1.be ( 4.3518 50.8469 )
+  ch1.ch ( 6.1399 46.2038 )
+  cz1.cz ( 14.4423 50.0785 )
+  de1.de ( 8.6842 50.1122 )
+  es1.es ( -3.7033 40.4167 )
+  fr1.fr ( 2.351 48.8566 )
+  gr1.gr ( 23.5808 37.9778 )
+  hr1.hr ( 15.9644 45.8071 )
+  hu1.hu ( 19.0936 47.4976 )
+  ie1.ie ( -6.2573 53.3416 )
+  il1.il ( 34.8097 32.0714 )
+  it1.it ( 9.19 45.4642 )
+  lu1.lu ( 6.1296 49.6112 )
+  nl1.nl ( 4.9407 52.3236 )
+  ny1.ny ( -73.94384 40.6698 )
+  pl1.pl ( 16.8874 52.3963 )
+  pt1.pt ( -9.1363 38.7073 )
+  se1.se ( 17.8742 59.3617 )
+  si1.si ( 14.5148 46.0574 )
+  sk1.sk ( 17.1297 48.1531 )
+  uk1.uk ( -0.1264 51.5086 )
+)
+
+# LINK SECTION
+#
+# <link_id> ( <source> <target> ) <pre_installed_capacity> <pre_installed_capacity_cost> <routing_cost> <setup_cost> ( {<module_capacity> <module_cost>}* )
+
+LINKS (
+)
+
+# DEMAND SECTION
+#
+# <demand_id> ( <source> <target> ) <routing_unit> <demand_value> <max_path_length>
+
+DEMANDS (
+  be1.be_at1.at ( be1.be at1.at ) 1 1.088637 UNLIMITED
+  be1.be_ch1.ch ( be1.be ch1.ch ) 1 0.172236 UNLIMITED
+  be1.be_cz1.cz ( be1.be cz1.cz ) 1 0.006579 UNLIMITED
+  be1.be_de1.de ( be1.be de1.de ) 1 32.961588 UNLIMITED
+  be1.be_es1.es ( be1.be es1.es ) 1 0.006073 UNLIMITED
+  be1.be_fr1.fr ( be1.be fr1.fr ) 1 4.012944 UNLIMITED
+  be1.be_gr1.gr ( be1.be gr1.gr ) 1 0.084347 UNLIMITED
+  be1.be_hr1.hr ( be1.be hr1.hr ) 1 0.002249 UNLIMITED
+  be1.be_il1.il ( be1.be il1.il ) 1 0.002137 UNLIMITED
+  be1.be_it1.it ( be1.be it1.it ) 1 0.002249 UNLIMITED
+  be1.be_lu1.lu ( be1.be lu1.lu ) 1 0.002587 UNLIMITED
+  be1.be_nl1.nl ( be1.be nl1.nl ) 1 0.466832 UNLIMITED
+  be1.be_ny1.ny ( be1.be ny1.ny ) 1 0.469868 UNLIMITED
+  be1.be_pl1.pl ( be1.be pl1.pl ) 1 0.006298 UNLIMITED
+  be1.be_se1.se ( be1.be se1.se ) 1 37.728482 UNLIMITED
+  be1.be_sk1.sk ( be1.be sk1.sk ) 1 0.003149 UNLIMITED
+  be1.be_uk1.uk ( be1.be uk1.uk ) 1 0.039812 UNLIMITED
+  pl1.pl_at1.at ( pl1.pl at1.at ) 1 0.021143 UNLIMITED
+  pl1.pl_ch1.ch ( pl1.pl ch1.ch ) 1 0.017319 UNLIMITED
+  pl1.pl_de1.de ( pl1.pl de1.de ) 1 1.817901 UNLIMITED
+  pl1.pl_es1.es ( pl1.pl es1.es ) 1 0.688327 UNLIMITED
+  pl1.pl_fr1.fr ( pl1.pl fr1.fr ) 1 0.087496 UNLIMITED
+  pl1.pl_gr1.gr ( pl1.pl gr1.gr ) 1 0.098517 UNLIMITED
+  pl1.pl_hr1.hr ( pl1.pl hr1.hr ) 1 0.007423 UNLIMITED
+  pl1.pl_hu1.hu ( pl1.pl hu1.hu ) 1 0.221439 UNLIMITED
+  pl1.pl_ie1.ie ( pl1.pl ie1.ie ) 1 0.033964 UNLIMITED
+  pl1.pl_nl1.nl ( pl1.pl nl1.nl ) 1 4.452336 UNLIMITED
+  pl1.pl_ny1.ny ( pl1.pl ny1.ny ) 1 0.041049 UNLIMITED
+  pl1.pl_pt1.pt ( pl1.pl pt1.pt ) 1 0.737304 UNLIMITED
+  pl1.pl_se1.se ( pl1.pl se1.se ) 1 7.158465 UNLIMITED
+  pl1.pl_si1.si ( pl1.pl si1.si ) 1 0.305617 UNLIMITED
+  pl1.pl_uk1.uk ( pl1.pl uk1.uk ) 1 0.27469 UNLIMITED
+)
+
+# ADMISSIBLE PATHS SECTION
+#
+# <demand_id> ( {<path_id> ( <link_id>+ )}+ )
+
+ADMISSIBLE_PATHS ( 
+)
